@@ -17,6 +17,7 @@
       />
 
       <button class="add-button" @click="addTodoCategory">Tambah</button>
+      <TodoApp @todo-removed="handleTodoRemoved" />
     </div>
 
     <div class="task-list">
@@ -262,7 +263,12 @@ computed: {
 
     removeTodo(index) {
       this.todos.splice(index, 1);
+      this.$emit('todo-removed', index);
     },
+    handleTodoRemoved(index) {
+    console.log(`Tugas dengan indeks ${index} telah dihapus`);
+    },
+    
     editTodo(index) {
       this.editingTodoIndex = index;
       this.editedTodoText = this.todos[index].text;
