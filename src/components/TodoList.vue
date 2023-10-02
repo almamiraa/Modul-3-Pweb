@@ -26,8 +26,8 @@
             <th class="px-4 py-2">Centang</th>
             <th class="px-4 py-2">Tugas</th>
             <th class="px-4 py-2">Kategori</th>
-            <th class="px-4 py-2">Edit</th>
-            <th class="px-4 py-2">Edit</th>
+            <th class="px-4 py-2">Edit Tugas</th>
+            <th class="px-4 py-2">Edit Kategori</th>
             <th class="px-4 py-2">Hapus</th>
           </tr>
         </thead>
