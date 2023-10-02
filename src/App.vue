@@ -2,6 +2,11 @@
   <div id="app">
     <TodoList />
   </div>
+  <div id="app">
+    <router-link to="/todo">To-Do List</router-link>
+    <router-view></router-view>
+  </div>
+</template>
 </template>
 
 <script>
