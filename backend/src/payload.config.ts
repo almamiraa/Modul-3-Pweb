@@ -1,5 +1,3 @@
-// src/payload.config.ts
-
 import path from "path";
 
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
@@ -8,7 +6,7 @@ import { slateEditor } from "@payloadcms/richtext-slate";
 import { buildConfig } from "payload/config";
 
 import Users from "./collections/Users";
-import Todos from "./collections/Todos";
+import Todo from "./collections/Todo";
 import Categories from "./collections/Categories";
 
 export default buildConfig({
@@ -17,7 +15,7 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: slateEditor({}),
-  collections: [Users, Todos, Categories],
+  collections: [Users, Todo, Categories],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
