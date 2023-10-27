@@ -8,6 +8,7 @@ import { buildConfig } from "payload/config";
 import Users from "./collections/Users";
 import Todo from "./collections/Todo";
 import Categories from "./collections/Categories";
+import Log from "./collections/Logs";
 
 export default buildConfig({
   admin: {
@@ -15,7 +16,7 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: slateEditor({}),
-  collections: [Users, Todo, Categories],
+  collections: [Users, Todo, Categories, Log],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
