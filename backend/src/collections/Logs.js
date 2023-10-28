@@ -14,9 +14,10 @@ const Log = {
         },
         {
             name: 'action',
-            type: 'text',
+            label: 'action',
+            type: 'select',
+            options: ['Create', 'Update', 'Delete'],
             required: true,
-            label : 'Action'
         },
         {
             name: "timestamp",
